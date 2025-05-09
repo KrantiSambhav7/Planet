@@ -17,7 +17,7 @@ camera.position.z = 8 ;
 const radius = 1.1 ; 
 const segments = 64 ; 
 const color = ["red" , "blue" , "green" , "blue"] ;
-const textureArr = ["../public/csilla/color.png" , "../public/earth/map.jpg" , "../public/venus/map.jpg" , "../public/volcanic/color.png"];
+const textureArr = ["/csilla/color.png" , "/earth/map.jpg" , "/venus/map.jpg" , "/volcanic/color.png"];
 const spheres = new THREE.Group() ; 
 
 const loader = new  RGBELoader();
@@ -47,7 +47,7 @@ spheres.rotation.x  = 0.1;
 spheres.position.y = -0.8; 
 scene.add(spheres) ; 
 
-const starTexture = new THREE.TextureLoader().load("../public/stars.jpg") ;
+const starTexture = new THREE.TextureLoader().load("/stars.jpg") ;
 starTexture.colorSpace = THREE.SRGBColorSpace ;
 const geometry = new THREE.SphereGeometry(50 , 64 , 64) ; 
 const material = new THREE.MeshStandardMaterial({map : starTexture , side: THREE.BackSide , transparent: true}) ; 

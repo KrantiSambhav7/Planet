@@ -8,3 +8,12 @@ html, body {
     width: 100%;
     background-color: black;
 }
+
+@font-face {
+    font-family: 'Astronova';
+    src: url('../public/fonts/Astronova.woff2') format('woff2'),
+         url('../public/fonts/Astronova.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} 

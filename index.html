@@ -5,33 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./src/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Polaris';
+      src: url('./fonts/Polaris.woff2') format('woff2'),
+           url('./fonts/Polaris.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    .heading {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .paragraph {
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 2px;
+    }
+    a{
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 2px;
+    }
+    h3{
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 6px;
+    }
+  </style>
 </head>
 <body>
   <div class="w-full h-screen overflow-hidden">
-    <div class=" absolute top-0 left-0 z-[2] w-full h-screen text-white font-['monument']">
+    <div class=" absolute top-0 left-0 z-[2] w-full h-screen text-white">
       <div>
-        <h2 class="fixed top-2 left-1/2 -translate-x-1/2 text-2xl">Scroll to see the magic !!</h2>
+        <h2 class="fixed top-2 left-1/2 -translate-x-1/2 text-lg">Scroll to see the magic</h2>
       </div>
       <nav class="w-full py-10 px-10 flex justify-between items-center">
-        <h3>PLANETS</h3>
-        <div class="flex  gap-4">
-          <a class="text-sm "  href="">Home</a>
-          <a class="text-sm " href="">About</a>
-          <a class="text-sm " href="">Contact</a>
+        <h3 class="text-2xl font-bold">PLANETS</h3>
+        <div class="flex gap-4">
+          <a class="text-md"  href="">Home</a>
+          <a class="text-md" href="">About</a>
+          <a class="text-md" href="">Contact</a>
         </div>
       </nav>
       <div class="absolute top-[10%] left-1/2 -translate-x-1/2 text-center">
         <div class=" w-full h-[9em] overflow-hidden ">
-          <h1 class="heading h-full text-9xl  font-light ">Earth</h1>
-          <h1 class="heading h-full text-9xl font-light ">Csilla</h1>
-          <h1 class="heading h-full text-9xl font-light ">Venus</h1>
-          <h1 class="heading h-full text-9xl font-light ">Volcanic</h1>
+          <h1 class="heading h-full text-9xl font-light">Earth</h1>
+          <h1 class="heading h-full text-9xl font-light">Csilla</h1>
+          <h1 class="heading h-full text-9xl font-light">Venus</h1>
+          <h1 class="heading h-full text-9xl font-light">Volcanic</h1>
         </div>
         <div class="w-full h-[2.5em] overflow-hidden ">
-          <p class="paragraph h-full text-sm font-['monument']">The Earth is a diverse, vibrant, and fragile planet, sustaining life through interconnected ecosystems.</p>
-          <p class="paragraph text-sm font-['monument']">Csilla is a distant, enigmatic world, its icy atmosphere swirling with mysterious gases and extreme weather patterns.</p>
-          <p class="paragraph text-sm font-['monument']">Venus is a distant, enigmatic world, its icy atmosphere swirling with mysterious gases and extreme weather patterns.</p>
-          <p class="paragraph text-sm font-['monument']">Volcanic is a majestic, gas-giant realm, adorned with stunning rings, embodying the wonders of the outer solar system.</p>
+          <p class="paragraph h-full text-sm">The Earth is a diverse, vibrant, and fragile planet, sustaining life through interconnected ecosystems.</p>
+          <p class="paragraph h-full text-sm">Csilla is a distant, enigmatic world, its icy atmosphere swirling with mysterious gases and extreme weather patterns.</p>
+          <p class="paragraph h-full text-sm">Venus is a distant, enigmatic world, its icy atmosphere swirling with mysterious gases and extreme weather patterns.</p>
+          <p class="paragraph h-full text-sm">Volcanic is a majestic, gas-giant realm, adorned with stunning rings, embodying the wonders of the outer solar system.</p>
         </div>
       </div>
     </div>
